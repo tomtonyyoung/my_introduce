@@ -8,8 +8,8 @@ function Header({setCNLang,setENLang}) {
                 <div className='HeaderItem'>TOMYU.CN</div>
             </div>
             <div className='HeaderItemRight'>
-                <div className='HeaderItem cursor'>github</div>
-                <div className='HeaderItem cursor'>blog</div>
+                <div className='HeaderItem cursor' onClick={()=>{window.open('https://github.com/tomtonyyoung/my_introduce')}}>github</div>
+                <div className='HeaderItem cursor' onClick={()=>{window.open('http://tomyu.cn:3001')}}>我的博客</div>
                 <div className='HeaderItem'>
                     语言:<span
                     className={`${lanClass[0]} cursor`}
@@ -20,14 +20,13 @@ function Header({setCNLang,setENLang}) {
                     <span
                         className={`${lanClass[1]} cursor`}
                         onClick={()=>{
-                            setLanClass(['lang','langFocus'])
-                            setENLang()
+                            window.alert("抱歉，由于当前翻译成英语会影响某些布局，从而导致一些动画bug，暂时关闭该功能。已经在努力修改中了🥺😰")
+                            // setLanClass(['lang','langFocus'])
+                            // setENLang()
                         }}>English</span>
                 </div>
                 <div></div>
             </div>
-
-            {/*<div></div>*/}
         </div>
     );
 }
