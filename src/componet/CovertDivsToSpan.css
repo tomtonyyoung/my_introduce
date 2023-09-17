@@ -1,0 +1,9 @@
+.CovertDivsToSpanBox{
+    overflow: hidden;
+    /*position: relative;*/
+
+}
+.animatedis{
+    display: inline-block;
+    transform: translateY(100%);
+}

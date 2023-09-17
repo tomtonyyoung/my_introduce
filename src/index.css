@@ -1,0 +1,92 @@
+/**::-webkit-scrollbar{*/
+/*  width: 2px;*/
+/*  height: 11px;*/
+/*}*/
+
+/**::-webkit-scrollbar-thumb {*/
+/*  background: #823ebe; // 滑块颜色*/
+/*  border-radius: 5px; // 滑块圆角*/
+/*}*/
+/*   * {*/
+/*     scrollbar-width: 2px;*/
+/*     scrollbar-base-color: green;*/
+/*     scrollbar-track-color: red;*/
+/*     scrollbar-arrow-color: blue;*/
+/*   }*/
+body{
+  overflow: overlay;
+}
+*::-webkit-scrollbar{
+  /*position: absolute;*/
+  background-color: rgba(0,0,0,0);
+  width: 8px;
+
+}
+*::-webkit-scrollbar-thumb{
+  background-color: transparent;
+  border-radius: 8px;
+  background-clip: content-box;
+  border: 2px solid transparent;
+}
+body[scroll]::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover{
+   background-color: rgba(194, 94, 94, 0.5);
+}
+
+
+
+
+a {
+  font-weight: 500;
+  /*color: #646cff;*/
+  color: white;
+  text-decoration: inherit;
+}
+a:hover {
+  /*color: #535bf2;*/
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

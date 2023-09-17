@@ -1,0 +1,82 @@
+.IntroduceBox{
+    width: 47%;
+    background-color: rgba(251,244,258);
+    height: 1500px;
+    padding: 50px;
+    /*border-radius:0 700px 20px 0;*/
+    /*border-radius:0 1000px 100px 0%;*/
+}
+@media screen and (max-width: 800px){
+    .IntroduceBox{
+        width: 95%;
+        opacity: 0.7;
+    }
+}
+*{
+    box-sizing: border-box;
+}
+.IntroduceHeader{
+    box-sizing: border-box;
+    padding-top: 300px;
+    height: 100vh;
+    position: relative;
+    border-bottom:1px solid ;
+}
+.IntroduceTitle{
+    position: relative;
+    color: plum;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    /*border: 1px solid;*/
+}
+.indexNum{
+    color: plum;
+    position: absolute;
+    font-size: xx-large;
+    font-weight: bolder;
+    bottom:5px;
+}
+/*标题装饰*/
+.IntroduceTitleText{
+    font-size: 64px;
+    font-weight: 500;
+    transform-origin: left;
+    transform: skewY(25deg);
+    z-index: 5;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 500px){
+    .IntroduceTitleText{
+        font-size: 48px;
+        font-weight: 500;
+        transform-origin: left;
+        transform: skewY(25deg);
+        z-index: 5;
+        text-transform: uppercase;
+    }
+}
+/*动画效果还未加*/
+.sOne,.sTwo,.sThree{
+    position: absolute;
+    display: block;
+    width: 100%;
+    max-width: 278px;
+    height: 60px;
+    border: 1px solid plum;
+
+    transform-origin:left;
+    transform: skewY(-25deg);
+}
+.sOne{
+    top: 0;
+}
+.sTwo{
+    top: 80px;
+}
+.sThree{
+    top: 80px;
+    background-color: plum;
+    transform: skewY(25deg);
+}

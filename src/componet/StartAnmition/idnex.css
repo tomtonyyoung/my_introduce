@@ -1,0 +1,147 @@
+@keyframes next {
+    from
+    {
+        width: 0;
+        height: 0;
+    }
+    to
+    {
+        width: 48px;
+        height:48px;
+    }
+
+}
+@keyframes turnUpDown {
+    from
+    {
+       transform: translateY(0px);
+    }
+    to
+    {
+        transform: translateY(-10px);
+    }
+
+}
+/*!* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 *!*/
+/*@font-face {*/
+/*    font-family: "阿里妈妈东方大楷 Regular";font-weight: 400;src: url("//at.alicdn.com/wf/webfont/MZkw2hXOHwzF/fRkaqb0v6Wgs.woff2") format("woff2"),*/
+/*url("//at.alicdn.com/wf/webfont/MZkw2hXOHwzF/0DiBb9cMlT2j.woff") format("woff");*/
+/*    font-display: swap;*/
+/*}*/
+.StartAnmitionBox{
+    /*position: relative;*/
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+}
+
+.textBox{
+    position: absolute;
+    font-family: 楷体;
+    font-weight: bold;
+    left: 50%;
+    top: 49%;
+}
+.textTitle{
+    position: absolute;
+    left: 20%;
+    bottom: 10%;
+    font-size: xx-large;
+}
+body{
+    /*font-family: 隶书;*/
+    /*font-family: 华文楷体;*/
+    font-family: 华文新魏;
+}
+.textTitle2{
+    position: absolute;
+
+    right: 20%;
+    top: 30%;
+    font-size: xxx-large;
+}
+@media screen and (max-width: 500px){
+    .textTitle2{
+        position: absolute;
+        right: 20%;
+        top: 30%;
+        font-size: xx-large;
+    }
+    .textTitle{
+        position: absolute;
+        left: 20%;
+        bottom: 10%;
+        font-size: larger;
+    }
+    .textBox{
+        position: absolute;
+        left: 20%;
+        top: 49%;
+        font-size: small;
+    }
+}
+.clickScrollNext{
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 10%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    color: white;
+    background-color: rgb(221, 38, 226);
+    border-radius: 5px;
+    font-size: xx-large;
+    transition: 0.5s ease-in-out;
+    height: 50px;
+    animation-name:turnUpDown;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.clickScrollNext:hover{
+    transition: 0.5s ease-in;
+    padding: 30px;
+    border-radius: 20px;
+
+}
+.nextIcon{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    animation-name:turnUpDown;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    overflow: visible;
+}
+.iconNext{
+    color: #dd26e2;
+    display: none;
+    animation-name:next;
+    animation-duration: 2s;
+}
+.iconNextText{
+    color: #dd26e2;
+    display: none;
+    animation-name:next;
+    animation-duration: 2s;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*.iconNext:hover{*/
+/*    box-sizing: border-box;*/
+/*    padding: 10px;*/
+/*    transition: 1s;*/
+/*}*/
